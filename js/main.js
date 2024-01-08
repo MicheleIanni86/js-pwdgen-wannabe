@@ -14,10 +14,8 @@ const coloruser = prompt('Qual è il tuo colore preferito?' , 'verde');
 console.log(coloruser);
 
 // Calcolo la password e la salco in una variabile
-let passworduser = nameuser + surnameuser + coloruser;
-
+const passworduser = nameuser + surnameuser + coloruser + 24;
 console.log(passworduser);
-passworduser = passworduser + "24";
 
 // Stampo la variabile della password
-resultElement.innerHTML = "La password generata è: " + passworduser ;
+resultElement.innerText = "La password generata è: " + passworduser;
